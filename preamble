@@ -1,0 +1,14 @@
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usepackage{amsthm,amssymb}
+\usepackage{amsmath}
+
+\fancypagestyle{rawr}{%
+  \fancyhf{}
+
+  \fancyhead[R]{Alberto Leal}
+  \fancyhead[L]{CSCB36 Assignment 1}
+
+\cfoot{ \fancyplain{}{\thepage} }
+}

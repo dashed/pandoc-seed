@@ -1,0 +1,14 @@
+{
+  "name": "pandoc-seed",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alberto Leal",
+  "license": "Public Domain",
+  "devDependencies": {
+    "chokidar": "^1.4.2"
+  }
+}
