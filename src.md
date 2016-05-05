@@ -201,7 +201,7 @@ c \cdot (p+1) -q > p   &\Leftrightarrow c \cdot (p+1) -p > q \notag
 &\Leftrightarrow p \cdot (c-1) + c > q \notag
 \end{align*}
 
-We can safely infer that $p \cdot (c-1) + c > p \cdot (c-1) + c - 1 > q $, from which we can see that
+We can safely infer that $p \cdot (c-1) + c > p \cdot (c-1) + c - 1 > q$, from which we can see that
 
 $$\dfrac{p+1}{q} > \dfrac{1}{c-1} > \dfrac{1}{c}$$
 
@@ -318,25 +318,25 @@ Case 1
 
 :   First bit is $0$
 
-	Since the first bit is $0$, then the remaining string of length $n-1$ contains "111".
+    Since the first bit is $0$, then the remaining string of length $n-1$ contains "111".
 
 Case 2
 
 :   First two bits is $10$
 
-	Since the first two bits is $10$, then the remaining string of length $n-2$ contains "111".
+    Since the first two bits is $10$, then the remaining string of length $n-2$ contains "111".
 
 Case 3
 
-:	First three bits is $110$
+:   First three bits is $110$
 
-	Since the first three bits is $001$, then the remaining string of length $n-3$ contains "111".
+    Since the first three bits is $001$, then the remaining string of length $n-3$ contains "111".
 
 Case 4
 
-:	First three bits is $111$
+:   First three bits is $111$
 
-	Since the first three bits is "$111$", then the remaining string of length $n-3$ can be of any combination of bits, which is $2^{n-3}$ possibilities.
+    Since the first three bits is "$111$", then the remaining string of length $n-3$ can be of any combination of bits, which is $2^{n-3}$ possibilities.
 
 The cases described above was simplified from cases where only first three bits were considered. To infer the simplification, consider that in case 1, the next two bits are treated as "don't-cares", and thus case 1 covers the possibility that the $n$-bit string may begin with "$000$", "$010$", "$001$", or "$011$". Likewise, in case 2, the next bit is also treated as "don't-care", and thus covers the possibility that the first three bits may begin with "$100$" or "$101$". In case 3, "$110$" is the only sequence left to consider in a 3-bit string arrangement aside from "111".
 
